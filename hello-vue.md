@@ -1,12 +1,15 @@
 ```
         <!-- production version, optimized for size and speed -->
         <script src="https://cdn.jsdelivr.net/npm/vue"></script>
-        
+```
+
+```
         <div id="app">
             @{{ message }}
         </div>
-        
-        
+```
+
+```        
         <script>
         var app = new Vue({
             el: '#app',
