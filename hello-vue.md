@@ -1,8 +1,3 @@
-```js
-        <!-- production version, optimized for size and speed -->
-        <script src="https://cdn.jsdelivr.net/npm/vue"></script>
-```
-
 ```html
         <div id="app">
             @{{ message }}
