@@ -5,6 +5,9 @@
             Name: @{{ name }}
         </li>
     </ul>
+    <ul>
+        <li v-for="name in names" v-text="name"></li>
+    </ul>
 </div>
 
 <script>
