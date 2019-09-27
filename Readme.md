@@ -37,6 +37,9 @@
             hideMessage(){
                 
             }
+        },
+        mounted(){
+           console.log('do stuff when component is ready');
         }
     });
     var app = new Vue({
