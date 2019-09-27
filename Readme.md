@@ -18,6 +18,9 @@
 ## Example app and component
 ```html
 <script>
+    import ExampleComponent from './components/ExampleComponent';
+    Vue.component('example-component', require('./components/ExampleComponent.vue').default);
+    
     Vue.component('message', {
         props:[
             'title', 'body'
@@ -39,9 +42,10 @@
     var app = new Vue({
         el: '#app'
     },
+    components: {Comp1, 'comp-2': Comp2}
     data:{
         message: ''
-    },);
+    });
 </script>
 ```
 
