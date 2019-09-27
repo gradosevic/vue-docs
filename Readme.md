@@ -15,6 +15,36 @@
 <link href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css" rel="stylesheet">
 ```
 
+## Example app and component
+```html
+<script>
+    Vue.component('message', {
+        props:[
+            'title', 'body'
+        ],
+       template: `
+           
+       `,
+        data(){
+            return {
+                message: true
+            }
+        },
+        methods:{
+            hideMessage(){
+                
+            }
+        }
+    });
+    var app = new Vue({
+        el: '#app'
+    },
+    data:{
+        message: ''
+    },);
+</script>
+```
+
 ## Prevent form submition
 ```html
 <form @submit.prevent="onSubmit">
