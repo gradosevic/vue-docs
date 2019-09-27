@@ -1,10 +1,11 @@
 ```html
- <div id="app">
-    <div>
-        <div slot="header">A Sample Title</div>
-        <h2 slot="footer"> Footer text </h2>
-        General content
-    </div>
+<div id="app">
+    <tabs>
+        <div slot="header">Wrapped in div</div>
+        <template slot="header">Not Wrapped when used template</template>
+        Not wrapped
+        <h2 slot="footer"> Wrapped in footer </h2>
+    </tabs>
 </div>
 
 <script>
