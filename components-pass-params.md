@@ -13,6 +13,7 @@
                 <h2>@{{ title }}</h2>
                 <p>@{{ body }}</p>
                 <button @click="hideMessage">x</button>
+                <button @click="showMessage = false">x</button>
             </article>
        `,
         data(){
