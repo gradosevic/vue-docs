@@ -64,5 +64,9 @@
 
 ## Updating fields
 ```html
-this.$refs.input.value = '';
+<script>
+    this.$refs.input.value = '';
+    this.$emit('input', val);
+    @input="OnImputChange"
+</script>
 ```
