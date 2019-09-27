@@ -67,6 +67,7 @@
 <script>
     this.$refs.input.value = '';
     this.$emit('input', val);
-    @input="OnImputChange"
+    < @input="OnImputChange">
+    < @input="code = $event.target.value">
 </script>
 ```
