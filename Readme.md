@@ -1,4 +1,5 @@
 
+## Include scripts
 ```html
 <!-- DEVELOPMENT -->
 <script src="https://unpkg.com/vue@2.6.10/dist/vue.js"></script>
@@ -8,4 +9,9 @@
 
 <!-- OR BETTER SPECIFIC -->
 <script src="https://cdn.jsdelivr.net/npm/vue@2.6.0"></script>
+```
+
+## Prevent form submition
+```html
+<form @submit.prevent="onSubmit">
 ```
