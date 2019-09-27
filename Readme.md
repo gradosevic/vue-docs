@@ -61,3 +61,8 @@
 ```html
 <form @keydown="errors.clear($event.target.name)"
 ```
+
+## Updating fields
+```html
+this.$refs.input.value = '';
+```
