@@ -16,7 +16,7 @@
 <form @submit.prevent="onSubmit">
 ```
 
-```html
 ## Clear form fields on keydown
+```html
 <form @keydown="errors.clear($event.target.name)"
 ```
