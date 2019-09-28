@@ -38,6 +38,11 @@
                 
             }
         },
+        filters: {
+            formatDate(date){
+               return (new Date(date)).toDateString();
+            }
+        },
         mounted(){
            console.log('do stuff when component is ready');
         }
