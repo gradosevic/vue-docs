@@ -91,3 +91,14 @@ Vue.directive('tooltip', {
 
 <p v-tooltip="Example tooltip"></p>
 ```
+
+## Without template
+```javascript
+<script>
+export default{
+	render(createElement){ //we can change createElement name
+		return createElement('h1', {class: 'my-class'} ,'Hello World!');
+	}
+}
+</script>
+```
