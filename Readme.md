@@ -49,10 +49,10 @@
     });
     var app = new Vue({
         el: '#app'
-    },
-    components: {Comp1, 'comp-2': Comp2}
-    data:{
-        message: ''
+        },
+        components: {Comp1, 'comp-2': Comp2}
+        data:{
+            message: ''
     });
 </script>
 ```
