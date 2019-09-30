@@ -76,3 +76,18 @@
     < @input="code = $event.target.value">
 </script>
 ```
+
+
+## Custom directive
+```html
+Vue.directive('tooltip', {
+	bind(elem, bindings){
+		new PopperTooltip(elem, {
+			placement: bindings.arg,
+			title: bindings.value
+		});
+	}
+});
+
+<p v-tooltip="Example tooltip"></p>
+```
