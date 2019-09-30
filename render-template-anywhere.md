@@ -6,6 +6,11 @@ npm install --save portal-vue
 
 https://portal-vue.linusb.org/guide/getting-started.html#setup
 
+```javascript
+import PortalVue from 'portal-vue';
+Vue.use(PortalVue);
+```
+
 ```html
 <portal to="destination">
   <p>This slot content will be rendered wherever the
