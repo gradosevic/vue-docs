@@ -45,7 +45,18 @@
         },
         mounted(){
            console.log('do stuff when component is ready');
-        }
+        },
+	created(){
+ 	    this.escapeHandler = (e) => {
+		if(e.key == 'Escape'){
+			//do something
+		}
+	    }
+	    document.addEventListener('keydown', this.escapeHandler);
+	},
+	destroyed(){		
+	    document.removeEventlistener('keydown', this.escapeHandler);
+	}
     });
     var app = new Vue({
         el: '#app'
