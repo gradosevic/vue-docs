@@ -23,7 +23,7 @@
     
     Vue.component('message', {
         props:[
-            'title', 'body'
+            'title', 'body', 'show'
         ],
        template: `
            
@@ -56,7 +56,18 @@
 	},
 	destroyed(){		
 	    document.removeEventlistener('keydown', this.escapeHandler);
-	}
+	},
+	watch: {//watches for props change 
+		//watcher runs only when things are changed, not set by default
+		show(show){
+		    if(show){}
+		}, 
+		//OR object with more details
+		show: {
+		    immidiate: true, //trigger on the start
+		    handler: function(){}
+		}
+	},
     });
     var app = new Vue({
         el: '#app'
@@ -112,4 +123,24 @@ export default{
 	}
 }
 </script>
+```
+
+## Refs
+REFS are links to elements inside component: 
+```html
+<input ref="example">
+//Access with
+this.$refs.example
+```
+
+## Vue portal - move template to different place
+```html
+//portal-vue npm package
+<portal to="modals"></portal>
+<portal-target name="modals"></portal-target>
+```
+
+## V-for add key
+```html
+<span v-for="tag in tags" :key="tag">
 ```
