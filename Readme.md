@@ -25,6 +25,11 @@
         props:[
             'title', 'body', 'show'
         ],
+	props:{
+	    prop1: {
+	        default: 'default-value'
+	    }
+	},
        template: `
            
        `,
