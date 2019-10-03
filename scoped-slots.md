@@ -1,3 +1,6 @@
+### When to use?
+When you want the template inside of slot access data from the child component hosting the slot content
+
 ```html
 <renderless-component>
 	<p>regular content</p>
