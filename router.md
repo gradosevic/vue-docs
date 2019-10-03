@@ -38,6 +38,7 @@ const router = new VueRouter({
 });
 
 Vue.use(VueRouter);
+
 const app = new Vue({
     el: '#app',
     router
