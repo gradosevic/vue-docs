@@ -45,7 +45,8 @@
                 accordionListState: {
                     activeItem: 1
                 }
-                //activeItem is not reactive, it's passed to child only once, se we need to use reactive state
+                //activeItem is not reactive, it's passed to child only once, 
+                //so we need to use reactive state
                 //activeItem: null
             }
         }
@@ -86,7 +87,7 @@
         <div class="header" @click="toggle">
             <slot name="header"></slot>
         </div>
-        <div v-if="showItem && !hideItem" class="content">
+        <div v-if="showItem" class="content">
             <slot name="content"></slot>
         </div>
     </div>
