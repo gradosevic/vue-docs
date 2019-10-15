@@ -3,7 +3,7 @@ import Vue from 'vue';
 import Vuex from 'vuex';
 
 Vue.use(Vuex);
-window.store = new Vuex.store({
+let store = new Vuex.store({
   state:{
     count: 0
   },
@@ -20,16 +20,17 @@ window.store = new Vuex.store({
 </template>
 <script>
 export default {
-  computed(){
-    count(){
-      return window.store.state.count;
-    } 
-  },
+  computed : mapState(['count']),
   methods(){
     increment(){
-      window.store.commit('increment');
+      this.store.commit('increment');
     }
   }
 }
 </script>
+
+const app = new Vue({
+  el: '#app',
+  store
+});
 ```
