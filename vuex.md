@@ -41,6 +41,7 @@ export default {
     }
   },
   methods(){
+    ...mapMutations(['addTodo']),
     increment(){
       this.$store.commit('increment');
     }
