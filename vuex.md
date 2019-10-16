@@ -11,6 +11,13 @@ let store = new Vuex.store({
     increment(state){
       state.count++;
     }
+  },
+  actions: {//for async operations
+    increment(context){
+      setTimeout(() => {
+        context.commit('increment');
+      }, 3000);
+    }
   }
 });
 
@@ -19,6 +26,7 @@ let store = new Vuex.store({
   <div>{{count}}</div>
 </template>
 <script>
+import {mapState, mapMutations} from 'vuex';
 export default {
   computed : mapState(['count']),
   methods(){
