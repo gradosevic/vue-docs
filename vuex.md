@@ -34,10 +34,15 @@ let store = new Vuex.store({
 <script>
 import {mapState, mapMutations} from 'vuex';
 export default {
-  computed : mapState(['count']),
+  computed : {
+    ...mapState(['count']),
+    todos(){
+      return this.$store.state.todos;
+    }
+  },
   methods(){
     increment(){
-      this.store.commit('increment');
+      this.$store.commit('increment');
     }
   }
 }
