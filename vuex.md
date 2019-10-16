@@ -10,6 +10,12 @@ let store = new Vuex.store({
   mutations: {
     increment(state){
       state.count++;
+    },
+    addTodo(store, {text}){
+      state.todos.push({
+        text,
+        done: false
+      });
     }
   },
   actions: {//for async operations
