@@ -11,7 +11,7 @@ let store = new Vuex.store({
     increment(state){
       state.count++;
     },
-    addTodo(store, {text}){
+    addTodo(state, {text}){
       state.todos.push({
         text,
         done: false
