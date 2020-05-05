@@ -8,7 +8,7 @@ export default{
   name: 'add-number',
   methods:{
     add(){
-      this.$store.state.numbers.push(3)
+      this.$store.commit('addNumber', Math.floor(Math.random() * (100 - 1) + 1))
     }
   }
 }
