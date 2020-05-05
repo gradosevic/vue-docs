@@ -3,6 +3,9 @@
     {{number}}
     {{sum}}
   </div>
+  <ul>
+    <li v-for="num in numbers">{{num}}</li>
+  </ul>
 </template>
 <script>
 export default{
@@ -10,6 +13,9 @@ export default{
   computed:{
     number(){
       return this.$store.getters.number
+    },
+    numbers(){
+      return this.$store.getters.numbers
     },
     sum(){
       return this.$store.getters.sum
