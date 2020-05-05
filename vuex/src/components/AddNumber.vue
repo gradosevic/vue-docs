@@ -15,6 +15,12 @@ export default{
         min: 1,
         max: 100
       })
+    },
+    addWithAction(){
+      this.$store.dispatch('fetchNumber', {
+        min: 1, 
+        max: 100
+      })
     }
   }
 }
