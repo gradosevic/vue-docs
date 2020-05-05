@@ -9,6 +9,12 @@ export default{
   methods:{
     add(){
       this.$store.commit('addNumber', Math.floor(Math.random() * (100 - 1) + 1))
+    },
+    add2(){
+      this.$store.commit('addNumber2', {
+        min: 1,
+        max: 100
+      })
     }
   }
 }
