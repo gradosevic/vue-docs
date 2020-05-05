@@ -1,5 +1,5 @@
 <template>
   <div class="sum">
-    {{$store.state.number}}
+    {{$store.getters.number}}
   </div>
 </template>
