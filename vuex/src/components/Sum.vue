@@ -1,6 +1,7 @@
 <template>
   <div class="sum">
     {{number}}
+    {{sum}}
   </div>
 </template>
 <script>
@@ -9,6 +10,9 @@ export default{
   computed:{
     number(){
       return this.$store.getters.number
+    },
+    sum(){
+      return this.$store.getters.sum
     }
   }
 }
