@@ -1,15 +1,22 @@
 <template>
-  <div class="sum">
-    {{number}}
-    {{sum}}
+  <div>
+    <div class="sum">
+      {{number}}
+      {{sum}}
+    </div>
+    <ul>
+      <li v-for="num in numbers">{{num}}</li>
+    </ul>
+    <add-number></add-number>
   </div>
-  <ul>
-    <li v-for="num in numbers">{{num}}</li>
-  </ul>
 </template>
 <script>
+import AddNumber from './AddNumber'
 export default{
   name: "sum",
+  components:{
+    AddNumber
+  },
   computed:{
     number(){
       return this.$store.getters.number
