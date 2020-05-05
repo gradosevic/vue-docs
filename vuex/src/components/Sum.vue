@@ -1,5 +1,15 @@
 <template>
   <div class="sum">
-    {{$store.getters.number}}
+    {{number}}
   </div>
 </template>
+<script>
+export default{
+  name: "sum",
+  computed:{
+    number(){
+      return this.$store.getters.number
+    }
+  }
+}
+</script>
