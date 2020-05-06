@@ -21,3 +21,8 @@ export default new Vuex.Store({
     shopping
   }
 })
+
+//IMPORTANT: When using namespaced: true inside the modules, we need to refer to them via namespace e.g.
+//...mapGetters({
+//  cart:'shopping/cart'
+//})
