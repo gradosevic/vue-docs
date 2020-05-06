@@ -4,9 +4,14 @@
   </div>
 </template>
 <script>
-import { mapActions } from 'vuex'
+import { mapGetters, mapActions } from 'vuex'
 export default{
   name: 'add-number',
+  computed: {
+    ...mapGetters({
+      cart, 'cart'
+    })
+  },
   methods:{
     ...mapActions({
       addProduct: 'addProduct'
