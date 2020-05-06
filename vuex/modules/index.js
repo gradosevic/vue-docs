@@ -26,3 +26,8 @@ export default new Vuex.Store({
 //...mapGetters({
 //  cart:'shopping/cart'
 //})
+
+//IMPORTANT: When dispatching messages, they will be checked against the namespace automatically e.g.
+// dispatch('message', 'Example message'), will be treated as dispatch('some-namespace/message', 'Esample message')
+//In case that we need to dispatch directly to root use this instead
+// dispatch('message', 'Example message', {root: true})
